@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mugesh · Java Backend Developer</title>
+<style>
+:root{--bg:#fafaf7;--card:#fff;--text:#1d2320;--muted:#5d6762;--accent:#0f766e;--line:#e3e6e1;--chip:#e6f2f0;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101513;--card:#171e1b;--text:#e9eeeb;--muted:#9aa6a0;--accent:#4fd1c0;--line:#2a3430;--chip:#1c2b28;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101513;--card:#171e1b;--text:#e9eeeb;--muted:#9aa6a0;--accent:#4fd1c0;--line:#2a3430;--chip:#1c2b28;color-scheme:dark}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.6}
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav div{max-width:920px;margin:auto;padding:14px 20px;display:flex;gap:20px;flex-wrap:wrap;align-items:center}
+nav b{margin-right:auto}
+nav a{color:var(--muted);font-size:.9rem}
+main{max-width:920px;margin:auto;padding:0 20px 60px}
+section{padding:48px 0 0}
+h1{font-size:clamp(2rem,6vw,3.2rem);line-height:1.15;margin:.2em 0}
+h2{font-size:1.3rem;margin:0 0 18px;display:flex;align-items:center;gap:10px}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.hero{padding-top:64px}
+.tag{color:var(--accent);font-weight:600;letter-spacing:.04em;font-size:.9rem}
+.lead{color:var(--muted);font-size:1.1rem;max-width:620px}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}
+.btn{padding:10px 18px;border-radius:8px;border:1px solid var(--accent);font-weight:600}
+.btn.p{background:var(--accent);color:var(--bg)}
+.btn:hover{text-decoration:none;opacity:.85}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.95rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{background:var(--chip);color:var(--accent);border-radius:999px;padding:3px 11px;font-size:.8rem;font-weight:600}
+.skills .card h3{font-size:.85rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:12px}
+.job small{color:var(--muted)}
+.job ul{margin:10px 0 0;padding-left:20px;color:var(--muted)}
+.stats{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px}
+.stats b{display:block;font-size:1.5rem}
+.stats span{color:var(--muted);font-size:.85rem}
+footer{max-width:920px;margin:auto;padding:24px 20px;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<nav><div><b>Mugesh</b><a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#contact">Contact</a></div></nav>
+<main>
+<section class="hero">
+  <div class="tag">JAVA BACKEND DEVELOPER · IoT SYSTEMS</div>
+  <h1>I build reliable backend systems that talk to real devices.</h1>
+  <p class="lead">2026 CSE graduate based in Bengaluru. I work with Spring Boot, messaging protocols and data-heavy services, with hands-on IoT experience from a six-month backend internship.</p>
+  <div class="btns"><a class="btn p" href="#projects">View projects</a><a class="btn" href="mailto:msmugesh82@gmail.com">Get in touch</a></div>
+  <div class="stats"><div><b>8.5</b><span>CGPA, B.E. CSE</span></div><div><b>6 mo</b><span>Backend internship</span></div><div><b>7</b><span>MQTT brokers benchmarked</span></div></div>
+</section>
+
+<section id="about">
+  <h2>About</h2>
+  <p>I’m a Java backend developer who enjoys the layer beneath the UI: APIs, protocols, persistence and the infrastructure that keeps data flowing. I graduated from Mahendra Engineering College, Namakkal, and spent my internship at Meteoros Sensing building IoT backends with ThingsBoard, MQTT, gRPC and Spring Boot.</p>
+  <p>Outside of work, I explore open source infrastructure, from stress-testing MQTT brokers to customizing ThingsBoard, and I’m drawn to distributed systems and developer tooling.</p>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card"><h3>Languages</h3><div class="chips"><span class="chip">Java 8+</span><span class="chip">SQL</span><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span></div></div>
+    <div class="card"><h3>Backend</h3><div class="chips"><span class="chip">Spring Boot</span><span class="chip">JPA</span><span class="chip">REST APIs</span><span class="chip">WebSocket</span><span class="chip">gRPC</span></div></div>
+    <div class="card"><h3>Data</h3><div class="chips"><span class="chip">PostgreSQL</span><span class="chip">MySQL</span><span class="chip">Oracle 11g</span></div></div>
+    <div class="card"><h3>IoT &amp; Messaging</h3><div class="chips"><span class="chip">MQTT</span><span class="chip">ThingsBoard</span></div></div>
+    <div class="card"><h3>Testing</h3><div class="chips"><span class="chip">JUnit</span></div></div>
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Experience</h2>
+  <div class="card job">
+    <h3>Backend Intern · Meteoros Sensing Pvt Ltd</h3>
+    <small>6 months · IoT platform engineering</small>
+    <ul>
+      <li>Built backend services for IoT systems using Spring Boot, MQTT and gRPC.</li>
+      <li>Worked with ThingsBoard, including porting the HTTP Integration from the Professional to the Community Edition, with technical documentation.</li>
+      <li>Stress-tested and compared seven MQTT brokers under load.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><h3>Real-Time Chat Application</h3><p>Live messaging over WebSocket, deployed on Render.</p><div class="chips"><span class="chip">Spring Boot</span><span class="chip">WebSocket</span></div></div>
+    <div class="card"><h3>Fuel Agency Suite</h3><p>Management system with role-based workflows for fuel agency operations.</p><div class="chips"><span class="chip">Spring Boot</span><span class="chip">MySQL</span></div></div>
+    <div class="card"><h3>Smart Email Assistant</h3><p>AI-assisted email replies powered by the Gemini API with a React front end.</p><div class="chips"><span class="chip">Spring Boot</span><span class="chip">Gemini API</span><span class="chip">React</span></div></div>
+    <div class="card"><h3>MQTT Broker Benchmarking</h3><p>Load and stress tests across seven brokers to compare throughput and stability.</p><div class="chips"><span class="chip">MQTT</span><span class="chip">Performance</span></div></div>
+    <div class="card"><h3>ThingsBoard CE HTTP Integration</h3><p>Ported an enterprise-only integration to the open source edition and documented it.</p><div class="chips"><span class="chip">ThingsBoard</span><span class="chip">Java</span></div></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Open to Java backend and software engineer roles. Let’s talk.</p>
+  <div class="btns">
+    <a class="btn p" href="mailto:msmugesh82@gmail.com">msmugesh82@gmail.com</a>
+    <a class="btn" href="https://github.com/MugeshMS">GitHub</a>
+    <a class="btn" href="https://leetcode.com/MUGESH-MS">LeetCode</a>
+  </div>
+</section>
+</main>
+<footer>© 2026 Mugesh · Bengaluru, India</footer>
+</body>
+</html>
